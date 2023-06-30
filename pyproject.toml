@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "gab"
+version = "0.1.0"
+description = "Scraping gab.com using Scrapy"
+authors = ["Edilou Bernardino <ediloub@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+scrapy = "^2.9.0"
+selenium = "^4.10.0"
+webdriver-manager = "^3.8.6"
+scrapy-fake-useragent = "^1.4.4"
+html2text = "^2020.1.16"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
