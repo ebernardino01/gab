@@ -157,10 +157,6 @@ class UserSpider(BaseSpider):
                 user_detail_item['posts'] = [
                     user_post for user_post in distinct_user_posts_sorted[:user_posts_limit]
                 ]
-                # for user_post in distinct_user_posts_sorted[:user_posts_limit]:
-                #     user_detail_item['posts'].append(user_post)
-
-                print(len(user_detail_item['posts']))
 
             yield user_detail_item
 

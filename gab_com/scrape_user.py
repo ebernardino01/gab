@@ -1,5 +1,3 @@
-import csv
-
 from logging import getLogger, ERROR
 from common import run_spider
 from spiders.user_spider import UserSpider
