@@ -66,7 +66,6 @@ class MainSpider(BaseSpider):
             users_limit = len(distinct_users)
 
         # Iterate through each user within the specified limit
-        #for user in islice(distinct_users, 0, users_limit):
         for user in distinct_users[:users_limit]:
             user_item = UserItem()
             user_item['user_url'] = f'{self.base_url}/{user}'
